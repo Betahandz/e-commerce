@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Da-Hubb | E-commerce product page</title>
+
+  <!-- external styling -->
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <!-- overlay modal -->
+  <div class="overlay">
+    
+  </div>
+
+  <!-- the header -->
+  <header class="master">
+    <!-- the menu -->
+    <img src="images/icon-menu.svg" alt="menu" id="menu">
+    <!-- logo container -->
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo" title="company">
+    </div>
+    <!-- the navigation section -->
+    <nav class="compass">
+      <ul class="co-ordinates">
+        <img src="images/icon-close.svg" alt="" class="comclose">
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">
+          Collections
+        </a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">
+          Men
+        </a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">
+          Women
+        </a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">
+          About
+        </a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">
+          Contact
+        </a></li>
+      </ul>
+    </nav>
+    <!-- the basket of orders -->
+    <div class="basket">
+      <span class="numOfItems">3</span>
+      <img src="images/icon-cart.svg" alt="cart">
+      <!-- CART -->
+      <div class="cart">
+        <h2 class="cartTitle">
+          Cart
+        </h2>
+
+        <!-- the items bought -->
+        <section class="itemspicked">
+          <p class="msg show">
+            Your cart is empty
+          </p>
+          <!-- section display single item -->
+          <section class="display">
+            <!-- the item box -->
+          </section>
+          <!-- the checkout cart -->
+          <button class="checkout1" type="button">checkout</button>
+        </section>
+      </div>
+    </div>
+    <!-- AVATAR -->
+    <img src="images/image-avatar.png" alt="profile" id="avatar">
+  </header>
+
+  <main>
+    <!-- products images -->
+    <section class="products">
+      <button class="prev"><img src="images/icon-previous.svg" alt=""></button>
+      <button class="next"><img src="images/icon-next.svg" alt=""></button>
+      <figure class="prodPic">
+        <img src="images/image-product-1.jpg" alt="">
+        <img src="images/image-product-2.jpg" alt="">
+        <img src="images/image-product-3.jpg" alt="">
+        <img src="images/image-product-4.jpg" alt="">
+      </figure>
+      <!-- thumbnails -->
+      <div class="thumbnails">
+        <img src="images/image-product-1-thumbnail.jpg" alt="shoe" class="active" data-photo="thumbone">
+        <img src="images/image-product-2-thumbnail.jpg" alt="shoe" class="" data-photo="thumbtwo">
+        <img src="images/image-product-3-thumbnail.jpg" alt="shoe" class="" data-photo="thumbthree">
+        <img src="images/image-product-4-thumbnail.jpg" alt="shoe" class="" data-photo="thumbfour">
+      </div>
+    </section>
+    <!-- products description -->
+    <section class="description">
+      <h3 class="descTitle">
+        sneakers Company
+      </h3>
+      <h1 class="title">
+        Fall Limited Edition Sneakers
+      </h1>
+      <p class="descText">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.      
+      </p>
+      <!-- the price and discount -->
+      <article class="price">
+        <div class="discount">
+          <h3 class="discountprice">$125.00</h3>
+          <p class="percentage"><mark>50%</mark></p>
+        </div>
+        <h4 class="mainPrice">$250.00</h4>
+      </article>
+      <!-- add to cart section -->
+      <section class="addition">
+        <div class="quantity">
+          <!-- subtract button -->
+          <button class="subtract" type="button">
+            <img src="images/icon-minus.svg" alt="">
+          </button>
+          <!-- quantity count -->
+          <p class="amount" contenteditable="true">0</p>
+          <!-- addition button -->
+          <button class="add" type="button">
+            <img src="images/icon-plus.svg" alt="">
+          </button>
+        </div>
+        <!-- the checkout button -->
+        <button class="checkout checkout2" type="button">
+          <img src="images/icon-cart.svg" alt="">
+          <span>Add to cart</span>
+        </button>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
