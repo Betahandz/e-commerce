@@ -13,28 +13,18 @@ const cart = document.querySelector(".cart");
 const btnquantity = document.querySelectorAll(".quantity button");
 const quantity = document.querySelector(".amount");
 const msg = document.querySelector(".msg");
-let nav;
-let navopener;
-let navcloser;
+const nav = document.querySelector(".compass");
+const navopener = document.getElementById("menu");
+const navcloser = document.querySelector(".comclose");
 
 // ************ OPTIONS OR CONDITIONS
-// getting width every second
+// getting width every second divided by two
 let width;
 setInterval(() => {
     width = firstPic.clientWidth + 10;
 }, 500);
 
-const checkmedia = () => {
-    const query = matchMedia("(max-width: 768px)");
-    if(query.matches) {
-        nav = document.querySelector(".compass");
-        navopener = document.getElementById("menu");
-        navcloser = document.querySelector(".comclose");
-    }
-    console.log(query)
-}
 
-setInterval(checkmedia(), 1000);
 
 // ****************** FUMCTIONS
 
@@ -151,6 +141,7 @@ const addToCart = () => {
 // function to toggle menu
 const toggleMenu = () => {
     nav.classList.toggle("trans");
+    console.log(toggleMenu);
 }
 
 
@@ -163,7 +154,7 @@ navcloser.addEventListener("click", toggleMenu);
 checkout2.addEventListener("click", addToCart);
 // checkout listerner
 checkout.addEventListener("click", showCart);
-checkout.addEventListener("blur", closecart);
+// checkout.addEventListener("blur", closecart);
 // thumb fuction
 thumb.forEach(thumbnail => {
     thumbnail.addEventListener("click", nextPhoto)
@@ -176,3 +167,5 @@ changePicBtn.forEach(btn => {
 btnquantity.forEach(btn => {
     btn.addEventListener("click", calculate);
 })
+
+/**************** abstrct learning */

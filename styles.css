@@ -615,7 +615,9 @@ button.next {
         padding: 0;
     }
     .products button {
-        display: block;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
     }
     button.prev {
         left: 20px;
